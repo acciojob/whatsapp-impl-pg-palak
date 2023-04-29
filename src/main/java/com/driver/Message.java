@@ -1,5 +1,6 @@
 package com.driver;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Message {
@@ -7,4 +8,21 @@ public class Message {
     private String content;
     private Date timestamp;
 
+    public int getId() {
+        return id;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public Date getTimestamp() {
+        return timestamp;
+    }
+
+    public Message(int id, String content) {
+        this.id = id;
+        this.content = content;
+        this.timestamp = new Date();
+    }
 }
